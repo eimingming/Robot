@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 02:46:49.877" rpa="false">
+<suite id="s1" name="Clicksubject" source="C:\Users\new\Desktop\TestSTY\homeNotLogin\clicksubject.robot">
+<test id="s1-t1" name="open">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${my_url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201205 02:46:50.102" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.76:8080/home'.</msg>
+<status status="PASS" starttime="20201205 02:46:50.101" endtime="20201205 02:46:54.348"></status>
+</kw>
+<status status="PASS" starttime="20201205 02:46:50.101" endtime="20201205 02:46:54.349" critical="yes"></status>
+</test>
+<test id="s1-t2" name="click basic use">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="Subject"]</arg>
+</arguments>
+<msg timestamp="20201205 02:46:54.356" level="INFO">Clicking element '//*[@name="Subject"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201205 02:46:54.772" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201205 02:46:54.369" endtime="20201205 02:46:54.772"></status>
+</kw>
+<msg timestamp="20201205 02:46:54.774" level="FAIL">Element with locator '//*[@name="Subject"]' not found.</msg>
+<status status="FAIL" starttime="20201205 02:46:54.356" endtime="20201205 02:46:54.774"></status>
+</kw>
+<status status="FAIL" starttime="20201205 02:46:54.356" endtime="20201205 02:46:54.774" critical="yes">Element with locator '//*[@name="Subject"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20201205 02:46:49.878" endtime="20201205 02:46:54.779"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="Clicksubject">Clicksubject</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
