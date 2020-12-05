@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 18:33:08.155" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 22:30:32.407" rpa="false">
 <suite id="s1" name="Account" source="C:\Users\new\Desktop\teststyl\tutorLogin\account.robot">
 <test id="s1-t1" name="Log in">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -8,16 +8,16 @@
 <arg>${my_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201205 18:33:08.381" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/hometutor'.</msg>
-<status status="PASS" starttime="20201205 18:33:08.381" endtime="20201205 18:33:12.916"></status>
+<msg timestamp="20201205 22:30:32.706" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/hometutor'.</msg>
+<status status="PASS" starttime="20201205 22:30:32.706" endtime="20201205 22:30:37.438"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=signin</arg>
 </arguments>
-<msg timestamp="20201205 18:33:12.917" level="INFO">Clicking button 'name=signin'.</msg>
-<status status="PASS" starttime="20201205 18:33:12.916" endtime="20201205 18:33:12.999"></status>
+<msg timestamp="20201205 22:30:37.439" level="INFO">Clicking button 'name=signin'.</msg>
+<status status="PASS" starttime="20201205 22:30:37.439" endtime="20201205 22:30:37.545"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -25,8 +25,8 @@
 <arg>name=email</arg>
 <arg>aaatutor@gmail.com</arg>
 </arguments>
-<msg timestamp="20201205 18:33:12.999" level="INFO">Typing text 'aaatutor@gmail.com' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20201205 18:33:12.999" endtime="20201205 18:33:13.244"></status>
+<msg timestamp="20201205 22:30:37.545" level="INFO">Typing text 'aaatutor@gmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20201205 22:30:37.545" endtime="20201205 22:30:37.847"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -34,75 +34,75 @@
 <arg>name=password</arg>
 <arg>123456</arg>
 </arguments>
-<msg timestamp="20201205 18:33:13.245" level="INFO">Typing text '123456' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201205 18:33:13.244" endtime="20201205 18:33:13.395"></status>
+<msg timestamp="20201205 22:30:37.848" level="INFO">Typing text '123456' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201205 22:30:37.848" endtime="20201205 22:30:38.063"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@class="signInBtn"]</arg>
 </arguments>
-<msg timestamp="20201205 18:33:13.396" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
-<status status="PASS" starttime="20201205 18:33:13.396" endtime="20201205 18:33:13.452"></status>
+<msg timestamp="20201205 22:30:38.064" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
+<status status="PASS" starttime="20201205 22:30:38.063" endtime="20201205 22:30:38.129"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:08.380" endtime="20201205 18:33:13.453" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:32.705" endtime="20201205 22:30:38.130" critical="yes"></status>
 </test>
-<test id="s1-t2" name="click Account">
+<test id="s1-t2" name="click human">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201205 18:33:17.465" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201205 18:33:13.455" endtime="20201205 18:33:17.465"></status>
+<msg timestamp="20201205 22:30:42.139" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201205 22:30:38.133" endtime="20201205 22:30:42.139"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=human</arg>
 </arguments>
-<msg timestamp="20201205 18:33:17.466" level="INFO">Clicking button 'name=human'.</msg>
-<status status="PASS" starttime="20201205 18:33:17.466" endtime="20201205 18:33:17.521"></status>
+<msg timestamp="20201205 22:30:42.141" level="INFO">Clicking button 'name=human'.</msg>
+<status status="PASS" starttime="20201205 22:30:42.140" endtime="20201205 22:30:42.223"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:13.455" endtime="20201205 18:33:17.521" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:38.132" endtime="20201205 22:30:42.225" critical="yes"></status>
 </test>
-<test id="s1-t3" name="show profile">
+<test id="s1-t3" name="click account /show profile">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201205 18:33:19.526" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201205 18:33:17.524" endtime="20201205 18:33:19.526"></status>
+<msg timestamp="20201205 22:30:44.245" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 22:30:42.230" endtime="20201205 22:30:44.245"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="list-item-169"]</arg>
 </arguments>
-<msg timestamp="20201205 18:33:19.528" level="INFO">Clicking element 'xpath=//*[@id="list-item-169"]'.</msg>
-<status status="PASS" starttime="20201205 18:33:19.528" endtime="20201205 18:33:19.601"></status>
+<msg timestamp="20201205 22:30:44.245" level="INFO">Clicking element 'xpath=//*[@id="list-item-169"]'.</msg>
+<status status="PASS" starttime="20201205 22:30:44.245" endtime="20201205 22:30:44.315"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:17.523" endtime="20201205 18:33:19.602" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:42.229" endtime="20201205 22:30:44.316" critical="yes"></status>
 </test>
-<test id="s1-t4" name="click account">
+<test id="s1-t4" name="click account for change pw">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201205 18:33:21.608" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201205 18:33:19.605" endtime="20201205 18:33:21.609"></status>
+<msg timestamp="20201205 22:30:46.328" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 22:30:44.323" endtime="20201205 22:30:46.328"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=resetpw</arg>
 </arguments>
-<msg timestamp="20201205 18:33:21.611" level="INFO">Clicking button 'name=resetpw'.</msg>
-<status status="PASS" starttime="20201205 18:33:21.610" endtime="20201205 18:33:21.699"></status>
+<msg timestamp="20201205 22:30:46.329" level="INFO">Clicking button 'name=resetpw'.</msg>
+<status status="PASS" starttime="20201205 22:30:46.329" endtime="20201205 22:30:46.424"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:19.605" endtime="20201205 18:33:21.700" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:44.322" endtime="20201205 22:30:46.425" critical="yes"></status>
 </test>
 <test id="s1-t5" name="input current password">
 <kw name="Sleep" library="BuiltIn">
@@ -110,8 +110,8 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201205 18:33:23.711" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201205 18:33:21.706" endtime="20201205 18:33:23.711"></status>
+<msg timestamp="20201205 22:30:48.437" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 22:30:46.431" endtime="20201205 22:30:48.439"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -119,10 +119,10 @@
 <arg>input-191</arg>
 <arg>123456</arg>
 </arguments>
-<msg timestamp="20201205 18:33:23.714" level="INFO">Typing text '123456' into text field 'input-191'.</msg>
-<status status="PASS" starttime="20201205 18:33:23.713" endtime="20201205 18:33:23.854"></status>
+<msg timestamp="20201205 22:30:48.441" level="INFO">Typing text '123456' into text field 'input-191'.</msg>
+<status status="PASS" starttime="20201205 22:30:48.440" endtime="20201205 22:30:48.681"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:21.705" endtime="20201205 18:33:23.855" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:46.429" endtime="20201205 22:30:48.682" critical="yes"></status>
 </test>
 <test id="s1-t6" name="input new password">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -131,8 +131,8 @@
 <arg>input-194</arg>
 <arg>1234567</arg>
 </arguments>
-<msg timestamp="20201205 18:33:23.861" level="INFO">Typing text '1234567' into text field 'input-194'.</msg>
-<status status="PASS" starttime="20201205 18:33:23.861" endtime="20201205 18:33:23.986"></status>
+<msg timestamp="20201205 22:30:48.696" level="INFO">Typing text '1234567' into text field 'input-194'.</msg>
+<status status="PASS" starttime="20201205 22:30:48.695" endtime="20201205 22:30:48.899"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -140,33 +140,35 @@
 <arg>input-197</arg>
 <arg>1234567</arg>
 </arguments>
-<msg timestamp="20201205 18:33:23.986" level="INFO">Typing text '1234567' into text field 'input-197'.</msg>
-<status status="PASS" starttime="20201205 18:33:23.986" endtime="20201205 18:33:24.113"></status>
+<msg timestamp="20201205 22:30:48.901" level="INFO">Typing text '1234567' into text field 'input-197'.</msg>
+<status status="PASS" starttime="20201205 22:30:48.900" endtime="20201205 22:30:49.098"></status>
 </kw>
+<status status="PASS" starttime="20201205 22:30:48.693" endtime="20201205 22:30:49.099" critical="yes"></status>
+</test>
+<test id="s1-t7" name="click save">
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=save</arg>
 </arguments>
-<msg timestamp="20201205 18:33:24.114" level="INFO">Clicking button 'name=save'.</msg>
-<status status="PASS" starttime="20201205 18:33:24.114" endtime="20201205 18:33:24.178"></status>
+<msg timestamp="20201205 22:30:49.107" level="INFO">Clicking button 'name=save'.</msg>
+<status status="PASS" starttime="20201205 22:30:49.107" endtime="20201205 22:30:49.248"></status>
 </kw>
-<status status="PASS" starttime="20201205 18:33:23.860" endtime="20201205 18:33:24.179" critical="yes"></status>
+<status status="PASS" starttime="20201205 22:30:49.106" endtime="20201205 22:30:49.249" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201205 18:33:08.156" endtime="20201205 18:33:24.184"></status>
+<status status="PASS" starttime="20201205 22:30:32.410" endtime="20201205 22:30:49.254"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="6" fail="0">Critical Tests</stat>
-<stat pass="6" fail="0">All Tests</stat>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="6" fail="0" id="s1" name="Account">Account</stat>
+<stat pass="7" fail="0" id="s1" name="Account">Account</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20201205 18:33:19.604" level="WARN">Multiple test cases with name 'click account' executed in test suite 'Account'.</msg>
 </errors>
 </robot>

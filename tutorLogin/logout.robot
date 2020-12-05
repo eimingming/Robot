@@ -16,13 +16,6 @@ Log in
 click human
     sleep  4s
     Click button   name=human
-click account /show profile
-    sleep  2s
-    Click Element    xpath=//*[@id="list-item-169"]
-click edit profile
-    sleep  2s
-    Click button   name=editprofile
-click account
-    sleep  2s
-    Click button   name=resetpw
-
+click Logout
+    sleep  4s
+    Click Element    xpath=//*[@id="list-item-171"]
