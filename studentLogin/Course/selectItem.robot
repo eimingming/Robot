@@ -24,5 +24,5 @@ click course
 click buy
     Click Element    //*[@class="buttonContainer col"]
     sleep  2s
-click shopee
+click shoping
     Click Element    //*[@class="v-image v-responsive iconBar theme--light"]
