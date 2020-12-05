@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201204 23:18:56.998" rpa="false">
+<suite id="s1" name="homeClickCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeClickCourse.robot">
+<test id="s1-t1" name="Open WebDriver">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://localhost:8080/home</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201204 23:18:57.204" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
+<status status="PASS" starttime="20201204 23:18:57.204" endtime="20201204 23:19:00.818"></status>
+</kw>
+<status status="PASS" starttime="20201204 23:18:57.203" endtime="20201204 23:19:00.819" critical="yes"></status>
+</test>
+<test id="s1-t2" name="กด">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@name="Cal2"]</arg>
+</arguments>
+<msg timestamp="20201204 23:19:00.822" level="INFO">Clicking element '//*[@name="Cal2"]'.</msg>
+<status status="PASS" starttime="20201204 23:19:00.822" endtime="20201204 23:19:00.965"></status>
+</kw>
+<status status="PASS" starttime="20201204 23:19:00.821" endtime="20201204 23:19:00.965" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201204 23:18:56.999" endtime="20201204 23:19:00.974"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="homeClickCourse">homeClickCourse</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
