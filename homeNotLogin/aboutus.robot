@@ -9,6 +9,6 @@ ${my_url}           http://localhost:8080/home
 *** Test Cases ***
 open
     Open Browser  ${my_url}  ${browser}
-click basic use
+click about
     Click button   name=about
 

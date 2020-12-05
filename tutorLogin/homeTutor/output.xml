@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 04:02:46.185" rpa="false">
-<suite id="s1" name="Account" source="C:\Users\new\Desktop\teststyl\tutorLogin\homeTutor\account.robot">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 17:42:55.842" rpa="false">
+<suite id="s1" name="Profile" source="C:\Users\new\Desktop\teststyl\tutorLogin\homeTutor\profile.robot">
 <test id="s1-t1" name="Log in">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,16 +8,16 @@
 <arg>${my_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201205 04:02:46.394" level="INFO">Opening browser 'chrome' to base url 'http://192.168.137.76:8080/hometutor'.</msg>
-<status status="PASS" starttime="20201205 04:02:46.393" endtime="20201205 04:02:50.538"></status>
+<msg timestamp="20201205 17:42:56.062" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/hometutor'.</msg>
+<status status="PASS" starttime="20201205 17:42:56.062" endtime="20201205 17:43:00.683"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=signin</arg>
 </arguments>
-<msg timestamp="20201205 04:02:50.540" level="INFO">Clicking button 'name=signin'.</msg>
-<status status="PASS" starttime="20201205 04:02:50.539" endtime="20201205 04:02:50.644"></status>
+<msg timestamp="20201205 17:43:00.684" level="INFO">Clicking button 'name=signin'.</msg>
+<status status="PASS" starttime="20201205 17:43:00.684" endtime="20201205 17:43:00.780"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -25,8 +25,8 @@
 <arg>name=email</arg>
 <arg>aaatutor@gmail.com</arg>
 </arguments>
-<msg timestamp="20201205 04:02:50.645" level="INFO">Typing text 'aaatutor@gmail.com' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20201205 04:02:50.645" endtime="20201205 04:02:50.887"></status>
+<msg timestamp="20201205 17:43:00.780" level="INFO">Typing text 'aaatutor@gmail.com' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20201205 17:43:00.780" endtime="20201205 17:43:01.064"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -34,49 +34,109 @@
 <arg>name=password</arg>
 <arg>123456</arg>
 </arguments>
-<msg timestamp="20201205 04:02:50.887" level="INFO">Typing text '123456' into text field 'name=password'.</msg>
-<status status="PASS" starttime="20201205 04:02:50.887" endtime="20201205 04:02:51.033"></status>
+<msg timestamp="20201205 17:43:01.065" level="INFO">Typing text '123456' into text field 'name=password'.</msg>
+<status status="PASS" starttime="20201205 17:43:01.064" endtime="20201205 17:43:01.232"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@class="signInBtn"]</arg>
 </arguments>
-<msg timestamp="20201205 04:02:51.034" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
-<status status="PASS" starttime="20201205 04:02:51.034" endtime="20201205 04:02:51.093"></status>
+<msg timestamp="20201205 17:43:01.232" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
+<status status="PASS" starttime="20201205 17:43:01.232" endtime="20201205 17:43:01.298"></status>
 </kw>
-<status status="PASS" starttime="20201205 04:02:46.393" endtime="20201205 04:02:51.094" critical="yes"></status>
+<status status="PASS" starttime="20201205 17:42:56.062" endtime="20201205 17:43:01.299" critical="yes"></status>
 </test>
 <test id="s1-t2" name="click Account">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20201205 17:43:05.306" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201205 17:43:01.302" endtime="20201205 17:43:05.306"></status>
+</kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>name=human</arg>
 </arguments>
-<msg timestamp="20201205 04:02:51.096" level="INFO">Clicking button 'name=human'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20201205 04:02:51.666" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20201205 04:02:51.113" endtime="20201205 04:02:51.666"></status>
+<msg timestamp="20201205 17:43:05.306" level="INFO">Clicking button 'name=human'.</msg>
+<status status="PASS" starttime="20201205 17:43:05.306" endtime="20201205 17:43:05.358"></status>
 </kw>
-<msg timestamp="20201205 04:02:51.668" level="FAIL">Button with locator 'name=human' not found.</msg>
-<status status="FAIL" starttime="20201205 04:02:51.096" endtime="20201205 04:02:51.668"></status>
-</kw>
-<status status="FAIL" starttime="20201205 04:02:51.095" endtime="20201205 04:02:51.669" critical="yes">Button with locator 'name=human' not found.</status>
+<status status="PASS" starttime="20201205 17:43:01.301" endtime="20201205 17:43:05.359" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20201205 04:02:46.187" endtime="20201205 04:02:51.675"></status>
+<test id="s1-t3" name="show profile">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201205 17:43:07.370" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 17:43:05.361" endtime="20201205 17:43:07.370"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="list-item-169"]</arg>
+</arguments>
+<msg timestamp="20201205 17:43:07.371" level="INFO">Clicking element 'xpath=//*[@id="list-item-169"]'.</msg>
+<status status="PASS" starttime="20201205 17:43:07.371" endtime="20201205 17:43:07.431"></status>
+</kw>
+<status status="PASS" starttime="20201205 17:43:05.361" endtime="20201205 17:43:07.431" critical="yes"></status>
+</test>
+<test id="s1-t4" name="click edit profile">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201205 17:43:09.439" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 17:43:07.434" endtime="20201205 17:43:09.440"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=editprofile</arg>
+</arguments>
+<msg timestamp="20201205 17:43:09.442" level="INFO">Clicking button 'name=editprofile'.</msg>
+<status status="PASS" starttime="20201205 17:43:09.442" endtime="20201205 17:43:09.604"></status>
+</kw>
+<status status="PASS" starttime="20201205 17:43:07.434" endtime="20201205 17:43:09.604" critical="yes"></status>
+</test>
+<test id="s1-t5" name="click edit profile">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201205 17:43:11.627" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201205 17:43:09.611" endtime="20201205 17:43:11.627"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>name=resetpw</arg>
+</arguments>
+<msg timestamp="20201205 17:43:11.628" level="INFO">Clicking button 'name=resetpw'.</msg>
+<status status="PASS" starttime="20201205 17:43:11.628" endtime="20201205 17:43:11.702"></status>
+</kw>
+<status status="PASS" starttime="20201205 17:43:09.610" endtime="20201205 17:43:11.702" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201205 17:42:55.844" endtime="20201205 17:43:11.708"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="1">Critical Tests</stat>
-<stat pass="1" fail="1">All Tests</stat>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="1" id="s1" name="Account">Account</stat>
+<stat pass="5" fail="0" id="s1" name="Profile">Profile</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20201205 17:43:09.609" level="WARN">Multiple test cases with name 'click edit profile' executed in test suite 'Profile'.</msg>
 </errors>
 </robot>

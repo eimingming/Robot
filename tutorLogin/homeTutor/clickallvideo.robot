@@ -13,8 +13,9 @@ Log in
     Input text   name=email    aaatutor@gmail.com
     Input text   name=password    123456
     Click Element   //*[@class="signInBtn"]
-click Account
-    Click button     name=human
+click All video
+    sleep  4s
+    Click Element   //*[@class="textDetailAll"]
 
 
 
