@@ -3,7 +3,7 @@ Library             SeleniumLibrary
 
 *** Variables ***
 ${browser}          chrome
-${my_url}           http://192.168.137.76:8080/home
+${my_url}           http://localhost:8080/
 
 
 *** Test Cases ***
@@ -23,3 +23,6 @@ click course
     sleep  4s
 click buy
     Click Element    //*[@class="buttonContainer col"]
+    sleep  4s
+click shoping
+    Click Element    //*[@class="v-image v-responsive iconBar theme--light"]

@@ -18,5 +18,6 @@ input password
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
-click subject
-    Click Element    //*[@class="ma-10 subjectCard v-card v-card--link v-sheet theme--light elevation-12"]
+click basic use
+    Click button   name=basicuse
+
