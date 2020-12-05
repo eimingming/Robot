@@ -3,7 +3,7 @@ Library             SeleniumLibrary
 
 *** Variables ***
 ${browser}          chrome
-${my_url}           http://192.168.137.76:8080/home
+${my_url}           http://localhost:8080/home
 
 
 *** Test Cases ***
