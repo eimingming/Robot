@@ -17,12 +17,10 @@ input password
     Input text   name=password    123456
 click signin
     Click Element   //*[@class="signInBtn"]
+    sleep  4s
+click Account
+    sleep  4s
+    Click button   name=human
+show profile
     sleep  2s
-click course
-    Click Element    //*[@name="Cal1"]
-    sleep  2s
-click buy
-    Click Element    //*[@class="buttonContainer col"]
-    sleep  2s
-click shoping
-    Click Element    //*[@class="v-image v-responsive iconBar theme--light"]
+    Click Element    xpath=//*[@id="list-item-264"]
