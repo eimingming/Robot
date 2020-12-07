@@ -12,3 +12,5 @@ open
 click subject
     sleep  4s
     Click Element    //*[@name="Subject"]
+    sleep  4s
+    Click Element    //*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]
