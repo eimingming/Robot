@@ -11,6 +11,8 @@ Signup
     Open Browser  ${my_url}  ${browser}
 click signin
     Click button   name=signup
+#select type
+#    select radio button     radio-120     a
 firstname
     Input text   input-134    new
 familyname
@@ -27,3 +29,4 @@ password
     Input text   input-155    123456
 confirm-password
     Input text   input-158    123456
+#select checkbox
