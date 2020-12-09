@@ -25,5 +25,9 @@ click course
 click buy
     Click Element    //*[@class="buttonContainer col"]
     sleep  4s
+<<<<<<< HEAD
 click shoping
     Click Element    //*[@ID="basket"]
+=======
+
+>>>>>>> d1588c5b9205776431f1b749fb4cc2056befff5f

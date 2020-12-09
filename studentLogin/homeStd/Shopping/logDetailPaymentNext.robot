@@ -24,3 +24,13 @@ click course
     sleep  4s
 click buy
     Click Element    //*[@class="buttonContainer col"]
+    sleep  4s
+click shoping
+    Click Element    //*[@ID="basket"]
+    sleep  4s
+click comfirm
+    Click button    class=bottonCom
+    sleep  10s
+click next
+    Click button    name=btnNext
+    sleep  10s
