@@ -10,11 +10,12 @@ ${my_url}           http://localhost:8080/
 open 
     Open Browser  ${my_url}  ${browser}
 click signin
+    sleep  2s
     Click button   name=signin
 input email
-    Input text   name=email    aaa@gmail.com
+    Input text   name=email    testSTD@gmail.com
 input password
-    Input text   name=password    123456
+    Input text   name=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
@@ -25,13 +26,13 @@ click buy
     Click Element    //*[@class="buttonContainer col"]
     sleep  4s
 click shoping
-    Click Element    //*[@class="v-image v-responsive iconBar theme--light"]
+    Click Element    //*[@ID="basket"]
     sleep  4s
 click comfirm
     Click button    class=bottonCom
     sleep  4s
 click next
     Click button    name=btnNext
-    sleep  4s
-click next
+    sleep  10s
+click comfirm of Invoice
     Click button    name=btnNext
