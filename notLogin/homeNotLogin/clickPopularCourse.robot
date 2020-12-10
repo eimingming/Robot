@@ -10,4 +10,5 @@ ${my_url}           http://localhost:8080/home
 open
     Open Browser  ${my_url}  ${browser}
 click popular course
-    Click Element    //*[@name="Popular"]
+    Sleep  4s
+    Click Element    //*[@id="Popular"]

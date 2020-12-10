@@ -10,7 +10,8 @@ ${my_url}           http://localhost:8080/home
 open
     Open Browser  ${my_url}  ${browser}
 click course
-    Click Element    //*[@name="Cal1"]
+    Sleep  4s
+    Click Element    //*[@id="Cal1"]
 click buy
     Sleep  4s
     Click Element    //*[@class="buttonContainer col"]

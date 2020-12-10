@@ -10,5 +10,6 @@ ${my_url}           http://localhost:8080/home
 open
     Open Browser  ${my_url}  ${browser}
 click about
-    Click button   name=about
+    sleep   4s
+    Click Button   //*[@id="about"]
 
