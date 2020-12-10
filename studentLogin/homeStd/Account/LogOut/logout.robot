@@ -10,17 +10,18 @@ ${my_url}           http://localhost:8080/
 open 
     Open Browser  ${my_url}  ${browser}
 click signin
-    Click button   name=signin
+    sleep  2s
+    Click button   id=signin
 input email
-    Input text   name=email    aaa@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    123456
+    Input text   id=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
 click Account
     sleep  4s
-    Click button   name=human
+    Click Element   xpath=//*[@id="account"]
 show profile
     sleep  2s
-    Click Element    xpath=//*[@id="list-item-264"]
+    Click Element    xpath=//*[@id="list-item-274"]

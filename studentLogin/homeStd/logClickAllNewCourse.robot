@@ -19,12 +19,5 @@ input password
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
-click Account
-    sleep  4s
-    Click Element   xpath=//*[@id="account"]
-click My course
-    sleep  4s
-    Click Element    xpath=//*[@id="list-item-272"]
-Click Course
-    sleep  4s
-    Click Element    xpath=//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]
+click new course
+    Click Element    //*[@id="allNewest"]

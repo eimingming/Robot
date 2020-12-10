@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201207 17:40:36.856" rpa="false">
-<suite id="s1" name="Clicksubject" source="C:\Users\new\Desktop\teststyl\notLogin\homeNotLogin\clicksubject.robot">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201210 14:31:24.189" rpa="false">
+<suite id="s1" name="Aboutus" source="D:\KMUTT\year3\term1\Robot\notLogin\homeNotLogin\aboutus.robot">
 <test id="s1-t1" name="open">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,47 +8,23 @@
 <arg>${my_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201207 17:40:37.073" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
-<status status="PASS" starttime="20201207 17:40:37.072" endtime="20201207 17:40:41.595"></status>
+<msg timestamp="20201210 14:31:24.337" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
+<status status="PASS" starttime="20201210 14:31:24.337" endtime="20201210 14:31:29.162"></status>
 </kw>
-<status status="PASS" starttime="20201207 17:40:37.072" endtime="20201207 17:40:41.595" critical="yes"></status>
+<status status="PASS" starttime="20201210 14:31:24.336" endtime="20201210 14:31:29.163" critical="yes"></status>
 </test>
-<test id="s1-t2" name="click subject">
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
+<test id="s1-t2" name="click about">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
-<arg>4s</arg>
+<arg>name=about</arg>
 </arguments>
-<msg timestamp="20201207 17:40:45.612" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201207 17:40:41.600" endtime="20201207 17:40:45.612"></status>
+<msg timestamp="20201210 14:31:29.167" level="INFO">Clicking button 'name=about'.</msg>
+<status status="PASS" starttime="20201210 14:31:29.166" endtime="20201210 14:31:30.274"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@name="Subject"]</arg>
-</arguments>
-<msg timestamp="20201207 17:40:45.613" level="INFO">Clicking element '//*[@name="Subject"]'.</msg>
-<status status="PASS" starttime="20201207 17:40:45.613" endtime="20201207 17:40:45.698"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>4s</arg>
-</arguments>
-<msg timestamp="20201207 17:40:49.701" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201207 17:40:45.698" endtime="20201207 17:40:49.701"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]</arg>
-</arguments>
-<msg timestamp="20201207 17:40:49.704" level="INFO">Clicking element '//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]'.</msg>
-<status status="PASS" starttime="20201207 17:40:49.704" endtime="20201207 17:40:49.780"></status>
-</kw>
-<status status="PASS" starttime="20201207 17:40:41.599" endtime="20201207 17:40:49.781" critical="yes"></status>
+<status status="PASS" starttime="20201210 14:31:29.166" endtime="20201210 14:31:30.274" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201207 17:40:36.858" endtime="20201207 17:40:49.786"></status>
+<status status="PASS" starttime="20201210 14:31:24.190" endtime="20201210 14:31:30.278"></status>
 </suite>
 <statistics>
 <total>
@@ -58,7 +34,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" id="s1" name="Clicksubject">Clicksubject</stat>
+<stat pass="2" fail="0" id="s1" name="Aboutus">Aboutus</stat>
 </suite>
 </statistics>
 <errors>

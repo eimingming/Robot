@@ -18,7 +18,7 @@ Input Text
     Click Element    //*[@class="v-select__selections"]
     Wait Until Element Is Visible    list-item-189-1
     Click Element    xpath=//*[@id="list-item-189-1"]
-    Input Text    email    testSTD@gmail.com
-    Input Text    con-email    testSTD@gmail.com
+    Input Text    email    aaaaaa@gmail.com
+    Input Text    con-email    aaaaaa@gmail.com
     Input Text    password    123456
-    Input Text    con-password    123456
+    Input Text    con-password    654321

@@ -11,11 +11,11 @@ open
     Open Browser  ${my_url}  ${browser}
 click signin
     sleep  2s
-    Click button   name=signin
+    Click button   id=signin
 input email
-    Input text   name=email    testSTD@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    123456
+    Input text   id=password    123456
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s

@@ -28,3 +28,9 @@ click My course
 Click Course
     sleep  4s
     Click Element    xpath=//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]
+Click Lesson
+    sleep  4s
+    Click Element    xpath=//*[@id="l000000013"]
+Click Lesson
+    sleep  4s
+    Click Element    xpath=//*[@id="v000000005"]    

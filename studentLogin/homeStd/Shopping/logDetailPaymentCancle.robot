@@ -11,25 +11,28 @@ open
     Open Browser  ${my_url}  ${browser}
 click signin
     sleep  2s
-    Click button   name=signin
+    Click button   id=signin
 input email
-    Input text   name=email    testSTD@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    741852
+    Input text   id=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
 click course
-    Click Element    //*[@name="Cal1"]
+    Click Element    //*[@id="Cal1"]
     sleep  4s
 click buy
     Click Element    //*[@class="buttonContainer col"]
     sleep  4s
 click shoping
     Click Element    //*[@ID="basket"]
-    sleep  4s
-click comfirm
+    sleep  6s
+click comfirm order page SelectItem
     Click button    class=bottonCom
-    sleep  4s
-click cancle
-    Click button    name=btnCancel
+    sleep  6s
+click next page invoice
+    Click button    id=btnNext
+    sleep  10s
+click cancle to detailpayment
+    Click button    id=btnCancle

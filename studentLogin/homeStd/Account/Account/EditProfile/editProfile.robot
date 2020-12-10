@@ -11,11 +11,11 @@ open
     Open Browser  ${my_url}  ${browser}
 click signin
     sleep  2s
-    Click button   name=signin
+    Click button   id=signin
 input email
-    Input text   name=email    testSTD@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    741852
+    Input text   id=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
@@ -23,28 +23,31 @@ click Account
     sleep  4s
     Click Element   xpath=//*[@id="account"]
 show profile
-    sleep  2s
-    Click Element    xpath=//*[@id="list-item-279"]
-show profile
-    sleep  2s
-    Click button   name=profile
+    sleep  4s
+    Click Element    xpath=//*[@id="list-item-270"]
 show profile
     sleep  4s
-    Click button   name=editProfile
+    Click button   id=profile
+show profile
+    sleep  4s
+    Click button   id=editProfile
+delete old data
+    Clear Text  xpath=//input[@id="FirstName"]
 change Input FirstName
-    Input text   input-307    jk
+    sleep  2s
+    Input text   id=FirstName    jk
 change Input LastName
-    Input text   input-310    jeon
+    Input text   id=FamilyName    jeon
     sleep  4s
 change Sex
     Click Element    //*[@id="sex"]
     sleep  2s
-    Click Element    xpath=//*[@id="list-item-333-0"]
+    Click Element    xpath=//*[@id="list-item-324-0"]
     sleep  2s
 change Education
     Click Element    //*[@id="education"]
     sleep  2s
-    Click Element    xpath=//*[@id="list-item-339-2"]
+    Click Element    xpath=//*[@id="list-item-330-1"]
     sleep  2s
 click Edit Profile
     Click Button   //*[@id="save"]

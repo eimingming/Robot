@@ -11,14 +11,14 @@ open
     Open Browser  ${my_url}  ${browser}
 click signin
     sleep  2s
-    Click button   name=signin
+    Click button   id=signin
 input email
-    Input text   name=email    testSTD@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    741852
+    Input text   id=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
-    sleep  4s
+    sleep  6s
 click subject
     Click Element    //*[@class="ma-10 subjectCard v-card v-card--link v-sheet theme--light elevation-12"]
     sleep  4s

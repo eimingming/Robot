@@ -11,11 +11,11 @@ open
     Open Browser  ${my_url}  ${browser}
 click signin
     sleep  2s
-    Click button   name=signin
+    Click button   id=signin
 input email
-    Input text   name=email    testSTD@gmail.com
+    Input text   id=email    testSTD@gmail.com
 input password
-    Input text   name=password    741852
+    Input text   id=password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
     sleep  4s
@@ -24,20 +24,20 @@ click Account
     Click Element   xpath=//*[@id="account"]
 show profile
     sleep  2s
-    Click Element    xpath=//*[@id="list-item-279"]
+    Click Element    xpath=//*[@id="list-item-270"]
 show profile
     sleep  2s
-    Click button   name=profile
+    Click button   id=profile
 show profile
     sleep  4s
-    Click button   name=password
+    Click button   id=password
     sleep  2s
 Input Current Password 
-    Input text   input-302    741852
+    Input text   id=currentPassword    741852
 Input New Password 
-    Input text   input-305    123456
+    Input text   id=newPassword    741852
 Input Con New Password 
-    Input text   input-308    123456
+    Input text   id=confirNewPassword    741852
     sleep  2s
 click Edit Profile
     Click Button   //*[@ID="save"]
