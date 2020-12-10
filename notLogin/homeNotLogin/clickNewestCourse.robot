@@ -12,3 +12,6 @@ open
 click newest course
     Sleep  4s
     Click Element    //*[@id="Newest"]
+click buy
+    Sleep  4s
+    Click Element    //*[@class="buttonContainer col"]
