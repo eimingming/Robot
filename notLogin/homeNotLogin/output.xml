@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201210 16:40:00.535" rpa="false">
-<suite id="s1" name="Clicksubject" source="C:\Users\new\Desktop\teststyl\notLogin\homeNotLogin\clicksubject.robot">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201210 21:35:02.654" rpa="false">
+<suite id="s1" name="Clickpopularcourse" source="C:\Users\new\Desktop\teststyl\notLogin\homeNotLogin\clickpopularcourse.robot">
 <test id="s1-t1" name="open">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,45 +8,29 @@
 <arg>${my_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201210 16:40:00.759" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
-<status status="PASS" starttime="20201210 16:40:00.759" endtime="20201210 16:40:05.632"></status>
+<msg timestamp="20201210 21:35:02.856" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
+<status status="PASS" starttime="20201210 21:35:02.856" endtime="20201210 21:35:07.402"></status>
 </kw>
-<status status="PASS" starttime="20201210 16:40:00.758" endtime="20201210 16:40:05.632" critical="yes"></status>
+<status status="PASS" starttime="20201210 21:35:02.856" endtime="20201210 21:35:07.403" critical="yes"></status>
 </test>
-<test id="s1-t2" name="click subject">
+<test id="s1-t2" name="click popular course">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201210 16:40:09.650" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201210 16:40:05.640" endtime="20201210 16:40:09.650"></status>
+<msg timestamp="20201210 21:35:11.419" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201210 21:35:07.407" endtime="20201210 21:35:11.419"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
-<arg>//*[@id="Subject"]</arg>
+<arg>//*[@id="Popular"]</arg>
 </arguments>
-<msg timestamp="20201210 16:40:09.651" level="INFO">Clicking element '//*[@id="Subject"]'.</msg>
-<status status="PASS" starttime="20201210 16:40:09.651" endtime="20201210 16:40:09.726"></status>
+<msg timestamp="20201210 21:35:11.420" level="INFO">Clicking element '//*[@id="Popular"]'.</msg>
+<status status="PASS" starttime="20201210 21:35:11.419" endtime="20201210 21:35:11.508"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>4s</arg>
-</arguments>
-<msg timestamp="20201210 16:40:13.731" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201210 16:40:09.727" endtime="20201210 16:40:13.731"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12" ]</arg>
-</arguments>
-<msg timestamp="20201210 16:40:13.732" level="INFO">Clicking element '//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12" ]'.</msg>
-<status status="PASS" starttime="20201210 16:40:13.731" endtime="20201210 16:40:13.829"></status>
-</kw>
-<status status="PASS" starttime="20201210 16:40:05.639" endtime="20201210 16:40:13.830" critical="yes"></status>
+<status status="PASS" starttime="20201210 21:35:07.406" endtime="20201210 21:35:11.509" critical="yes"></status>
 </test>
 <test id="s1-t3" name="click buy">
 <kw name="Sleep" library="BuiltIn">
@@ -54,30 +38,40 @@
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201210 16:40:17.843" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201210 16:40:13.835" endtime="20201210 16:40:17.843"></status>
+<msg timestamp="20201210 21:35:15.516" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201210 21:35:11.515" endtime="20201210 21:35:15.517"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>//*[@class="buttonContainer col"]</arg>
 </arguments>
-<msg timestamp="20201210 16:40:17.846" level="INFO">Clicking element '//*[@class="buttonContainer col"]'.</msg>
-<status status="PASS" starttime="20201210 16:40:17.845" endtime="20201210 16:40:17.908"></status>
+<msg timestamp="20201210 21:35:15.520" level="INFO">Clicking element '//*[@class="buttonContainer col"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201210 21:35:16.858" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201210 21:35:16.569" endtime="20201210 21:35:16.858"></status>
 </kw>
-<status status="PASS" starttime="20201210 16:40:13.834" endtime="20201210 16:40:17.909" critical="yes"></status>
+<msg timestamp="20201210 21:35:16.860" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div data-v-54cbe3be="" class="buttonContainer col"&gt;...&lt;/div&gt; is not clickable at point (924, 65). Other element would receive the click: &lt;div class="v-toolbar__content" style="height: 70px;"&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.88)
+</msg>
+<status status="FAIL" starttime="20201210 21:35:15.519" endtime="20201210 21:35:16.860"></status>
+</kw>
+<status status="FAIL" starttime="20201210 21:35:11.514" endtime="20201210 21:35:16.861" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div data-v-54cbe3be="" class="buttonContainer col"&gt;...&lt;/div&gt; is not clickable at point (924, 65). Other element would receive the click: &lt;div class="v-toolbar__content" style="height: 70px;"&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.88)
+</status>
 </test>
-<status status="PASS" starttime="20201210 16:40:00.536" endtime="20201210 16:40:17.916"></status>
+<status status="FAIL" starttime="20201210 21:35:02.655" endtime="20201210 21:35:16.866"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0">Critical Tests</stat>
-<stat pass="3" fail="0">All Tests</stat>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" id="s1" name="Clicksubject">Clicksubject</stat>
+<stat pass="2" fail="1" id="s1" name="Clickpopularcourse">Clickpopularcourse</stat>
 </suite>
 </statistics>
 <errors>

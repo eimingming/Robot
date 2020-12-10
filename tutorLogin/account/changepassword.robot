@@ -21,4 +21,14 @@ click human
 click account / show profile
     sleep  2s
     Click Element    //*[@id="list-item-176"]
-
+click account for change pw
+    sleep  2s
+    Click Button   //*[@id="resetpw"]
+input current password
+    sleep  2s
+    Input text    current-password    123456
+input new password
+    Input text    new-password    1234567
+    Input text    con-password    1234567
+click save
+    Click Button   //*[@id="save"]
