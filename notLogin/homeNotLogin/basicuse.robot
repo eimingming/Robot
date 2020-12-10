@@ -10,5 +10,5 @@ ${my_url}           http://localhost:8080/home
 open
     Open Browser  ${my_url}  ${browser}
 click basic use
-    Click button   name=basicuse
-
+    sleep   4s
+    Click Button   //*[@id="basicuse"]

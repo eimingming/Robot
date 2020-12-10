@@ -10,11 +10,12 @@ ${my_url}           http://localhost:8080/home
 open 
     Open Browser  ${my_url}  ${browser}
 click signin  
-    Click button   name=signin
+    Sleep   4s
+    Click Button   //*[@id="signin"]
 input email
-    Input text   name=email    aaa@gmail.com
+    Input text   email    aaa@gmail.com
 input password
-    Input text   name=password    123456
+    Input text   password    741852
 click signin
     Click Element   //*[@class="signInBtn"]
 

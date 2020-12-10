@@ -11,6 +11,9 @@ open
     Open Browser  ${my_url}  ${browser}
 click subject
     sleep  4s
-    Click Element    //*[@name="Subject"]
+    Click Element    //*[@id="Subject"]
     sleep  4s
-    Click Element    //*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]
+    Click Element    //*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12" ]
+click buy
+    Sleep   4s
+    Click Element    //*[@class="buttonContainer col"]
