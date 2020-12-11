@@ -5,15 +5,12 @@ Library             SeleniumLibrary
 ${browser}          chrome
 ${my_url}           http://localhost:8080/home
 
-
 *** Test Cases ***
 Signup
     Open Browser  ${my_url}  ${browser}
 click signin
     Sleep   4s
     Click Button   //*[@id="signup"]
-#select type
-#    select radio button     radio-120     a
 firstname
     Input text   firstname    new
 familyname

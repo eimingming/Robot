@@ -24,3 +24,9 @@ click Account
 show profile
     sleep  2s
     Click Element    xpath=//*[@id="list-item-270"]
+edit profile
+    sleep  4s
+    Click button   id=editProfile
+show change password
+    sleep  4s
+    Click button   id=password

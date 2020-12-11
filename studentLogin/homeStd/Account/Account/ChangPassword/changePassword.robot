@@ -5,7 +5,6 @@ Library             SeleniumLibrary
 ${browser}          chrome
 ${my_url}           http://localhost:8080/
 
-
 *** Test Cases ***
 open 
     Open Browser  ${my_url}  ${browser}
@@ -28,10 +27,10 @@ show profile
 show profile
     sleep  2s
     Click button   id=profile
-show profile
+show change password
     sleep  4s
     Click button   id=password
-    sleep  2s
+    sleep  4s
 Input Current Password 
     Input text   id=currentPassword    741852
 Input New Password 

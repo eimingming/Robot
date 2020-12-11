@@ -5,7 +5,6 @@ Library             SeleniumLibrary
 ${browser}          chrome
 ${my_url}           http://localhost:8080/
 
-
 *** Test Cases ***
 open 
     Open Browser  ${my_url}  ${browser}
@@ -31,8 +30,6 @@ show profile
 show profile
     sleep  4s
     Click button   id=editProfile
-delete old data
-    Clear Text  xpath=//input[@id="FirstName"]
 change Input FirstName
     sleep  2s
     Input text   id=FirstName    jk
