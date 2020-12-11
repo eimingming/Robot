@@ -5,7 +5,6 @@ Library             SeleniumLibrary
 ${browser}          chrome
 ${my_url}           http://localhost:8080/
 
-
 *** Test Cases ***
 open 
     Open Browser  ${my_url}  ${browser}

@@ -27,6 +27,3 @@ click buy
     sleep  4s
 click shoping
     Click Element    //*[@ID="basket"]
-    sleep  6s
-click comfirm
-    Click Element    //*[@class="bottonCom"]

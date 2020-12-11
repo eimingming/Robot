@@ -1,87 +1,1599 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201204 23:18:56.998" rpa="false">
-<suite id="s1" name="homeClickCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeClickCourse.robot">
-<test id="s1-t1" name="Open WebDriver">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201211 02:46:59.526" rpa="false">
+<suite id="s1" name="homeStd" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd">
+<suite id="s1-s1" name="Aboutus" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\aboutus.robot">
+<test id="s1-s1-t1" name="open">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>http://localhost:8080/home</arg>
-<arg>chrome</arg>
+<arg>${my_url}</arg>
+<arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201204 23:18:57.204" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
-<status status="PASS" starttime="20201204 23:18:57.204" endtime="20201204 23:19:00.818"></status>
+<msg timestamp="20201211 02:46:59.696" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/'.</msg>
+<status status="PASS" starttime="20201211 02:46:59.695" endtime="20201211 02:47:04.510"></status>
 </kw>
-<status status="PASS" starttime="20201204 23:18:57.203" endtime="20201204 23:19:00.819" critical="yes"></status>
+<status status="PASS" starttime="20201211 02:46:59.695" endtime="20201211 02:47:04.511" critical="yes"></status>
 </test>
-<test id="s1-t2" name="กด">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
+<test id="s1-s1-t2" name="click signin">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>//*[@name="Cal2"]</arg>
+<arg>2s</arg>
 </arguments>
-<msg timestamp="20201204 23:19:00.822" level="INFO">Clicking element '//*[@name="Cal2"]'.</msg>
-<status status="PASS" starttime="20201204 23:19:00.822" endtime="20201204 23:19:00.965"></status>
+<msg timestamp="20201211 02:47:06.520" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201211 02:47:04.517" endtime="20201211 02:47:06.520"></status>
 </kw>
-<status status="PASS" starttime="20201204 23:19:00.821" endtime="20201204 23:19:00.965" critical="yes"></status>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=signin</arg>
+</arguments>
+<msg timestamp="20201211 02:47:06.521" level="INFO">Clicking button 'id=signin'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20201211 02:47:07.413" endtime="20201211 02:47:07.414"></status>
+</kw>
+<msg timestamp="20201211 02:47:07.414" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20201211 02:47:06.520" endtime="20201211 02:47:07.415"></status>
+</kw>
+<status status="FAIL" starttime="20201211 02:47:04.516" endtime="20201211 02:47:07.416" critical="yes">Execution terminated by signal</status>
 </test>
-<status status="PASS" starttime="20201204 23:18:56.999" endtime="20201204 23:19:00.974"></status>
+<test id="s1-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.417" endtime="20201211 02:47:07.418" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.418" endtime="20201211 02:47:07.419" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.420" endtime="20201211 02:47:07.421" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t6" name="click basic use">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.423" endtime="20201211 02:47:07.424" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:46:59.547" endtime="20201211 02:47:07.426"></status>
+</suite>
+<suite id="s1-s2" name="Account" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account">
+<suite id="s1-s2-s1" name="Account" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account">
+<suite id="s1-s2-s1-s1" name="ChangPassword" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account\ChangPassword">
+<suite id="s1-s2-s1-s1-s1" name="changePassword" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account\ChangPassword\changePassword.robot">
+<test id="s1-s2-s1-s1-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.441" endtime="20201211 02:47:07.442" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.443" endtime="20201211 02:47:07.443" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.445" endtime="20201211 02:47:07.445" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.446" endtime="20201211 02:47:07.447" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.448" endtime="20201211 02:47:07.449" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.450" endtime="20201211 02:47:07.450" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t7" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.451" endtime="20201211 02:47:07.451" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t8" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.453" endtime="20201211 02:47:07.454" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t9" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.456" endtime="20201211 02:47:07.457" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t10" name="Input Current Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.458" endtime="20201211 02:47:07.459" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t11" name="Input New Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.460" endtime="20201211 02:47:07.460" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t12" name="Input Con New Password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.461" endtime="20201211 02:47:07.462" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t13" name="click Edit Profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.462" endtime="20201211 02:47:07.463" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.432" endtime="20201211 02:47:07.464"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.431" endtime="20201211 02:47:07.466"></status>
+</suite>
+<suite id="s1-s2-s1-s2" name="EditProfile" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account\EditProfile">
+<suite id="s1-s2-s1-s2-s1" name="editProfile" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account\EditProfile\editProfile.robot">
+<test id="s1-s2-s1-s2-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.478" endtime="20201211 02:47:07.478" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.479" endtime="20201211 02:47:07.480" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.480" endtime="20201211 02:47:07.481" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.482" endtime="20201211 02:47:07.483" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.484" endtime="20201211 02:47:07.484" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.485" endtime="20201211 02:47:07.485" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t7" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.486" endtime="20201211 02:47:07.487" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t8" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.489" endtime="20201211 02:47:07.489" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t9" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.490" endtime="20201211 02:47:07.490" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t10" name="delete old data">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.491" endtime="20201211 02:47:07.491" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t11" name="change Input FirstName">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.493" endtime="20201211 02:47:07.493" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t12" name="change Input LastName">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.494" endtime="20201211 02:47:07.494" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t13" name="change Sex">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.495" endtime="20201211 02:47:07.495" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t14" name="change Education">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.496" endtime="20201211 02:47:07.496" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s2-s1-t15" name="click Edit Profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.497" endtime="20201211 02:47:07.498" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.477" endtime="20201211 02:47:07.498"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.476" endtime="20201211 02:47:07.500"></status>
+</suite>
+<suite id="s1-s2-s1-s3" name="Profile" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\Account\Profile.robot">
+<test id="s1-s2-s1-s3-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.511" endtime="20201211 02:47:07.511" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.512" endtime="20201211 02:47:07.512" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.513" endtime="20201211 02:47:07.513" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.514" endtime="20201211 02:47:07.514" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.515" endtime="20201211 02:47:07.516" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.516" endtime="20201211 02:47:07.517" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s1-s3-t7" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.518" endtime="20201211 02:47:07.518" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.510" endtime="20201211 02:47:07.519"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.430" endtime="20201211 02:47:07.520"></status>
+</suite>
+<suite id="s1-s2-s2" name="LogOut" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\LogOut">
+<suite id="s1-s2-s2-s1" name="Logout" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\LogOut\logout.robot">
+<test id="s1-s2-s2-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.523" endtime="20201211 02:47:07.524" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.524" endtime="20201211 02:47:07.525" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.525" endtime="20201211 02:47:07.526" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.526" endtime="20201211 02:47:07.527" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.528" endtime="20201211 02:47:07.528" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.529" endtime="20201211 02:47:07.529" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s2-s1-t7" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.530" endtime="20201211 02:47:07.530" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.523" endtime="20201211 02:47:07.531"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.522" endtime="20201211 02:47:07.533"></status>
+</suite>
+<suite id="s1-s2-s3" name="MyCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\MyCourse">
+<suite id="s1-s2-s3-s1" name="chooseTutor" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\MyCourse\chooseTutor.robot">
+<test id="s1-s2-s3-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.536" endtime="20201211 02:47:07.536" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.537" endtime="20201211 02:47:07.537" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.538" endtime="20201211 02:47:07.538" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.539" endtime="20201211 02:47:07.540" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.541" endtime="20201211 02:47:07.541" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.542" endtime="20201211 02:47:07.542" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t7" name="click My course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.543" endtime="20201211 02:47:07.543" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t8" name="Click Course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.544" endtime="20201211 02:47:07.544" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t9" name="Click Lesson">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.545" endtime="20201211 02:47:07.545" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s1-t10" name="Click Lesson">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.546" endtime="20201211 02:47:07.547" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.535" endtime="20201211 02:47:07.548"></status>
+</suite>
+<suite id="s1-s2-s3-s2" name="clickMyCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\MyCourse\clickMyCourse.robot">
+<test id="s1-s2-s3-s2-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.550" endtime="20201211 02:47:07.550" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.551" endtime="20201211 02:47:07.551" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.552" endtime="20201211 02:47:07.552" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.553" endtime="20201211 02:47:07.553" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.554" endtime="20201211 02:47:07.554" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.555" endtime="20201211 02:47:07.556" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t7" name="click My course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.557" endtime="20201211 02:47:07.557" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s2-t8" name="Click Course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.558" endtime="20201211 02:47:07.559" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.549" endtime="20201211 02:47:07.559"></status>
+</suite>
+<suite id="s1-s2-s3-s3" name="clickMyLesson" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\MyCourse\clickMyLesson.robot">
+<test id="s1-s2-s3-s3-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.561" endtime="20201211 02:47:07.562" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.562" endtime="20201211 02:47:07.563" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.564" endtime="20201211 02:47:07.564" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.565" endtime="20201211 02:47:07.565" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.566" endtime="20201211 02:47:07.566" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.567" endtime="20201211 02:47:07.567" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t7" name="click My course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.568" endtime="20201211 02:47:07.568" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t8" name="Click Course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.569" endtime="20201211 02:47:07.569" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s3-t9" name="Click Lesson">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.570" endtime="20201211 02:47:07.570" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.561" endtime="20201211 02:47:07.571"></status>
+</suite>
+<suite id="s1-s2-s3-s4" name="myCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Account\MyCourse\myCourse.robot">
+<test id="s1-s2-s3-s4-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.582" endtime="20201211 02:47:07.582" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.583" endtime="20201211 02:47:07.584" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.584" endtime="20201211 02:47:07.585" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.586" endtime="20201211 02:47:07.586" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.587" endtime="20201211 02:47:07.588" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t6" name="click Account">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.588" endtime="20201211 02:47:07.589" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-s3-s4-t7" name="show profile">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.589" endtime="20201211 02:47:07.590" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.581" endtime="20201211 02:47:07.591"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.534" endtime="20201211 02:47:07.592"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.429" endtime="20201211 02:47:07.596"></status>
+</suite>
+<suite id="s1-s3" name="Basicuse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\basicuse.robot">
+<test id="s1-s3-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.602" endtime="20201211 02:47:07.602" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.604" endtime="20201211 02:47:07.604" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.605" endtime="20201211 02:47:07.606" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.607" endtime="20201211 02:47:07.607" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.617" endtime="20201211 02:47:07.617" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s3-t6" name="click basic use">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.618" endtime="20201211 02:47:07.618" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.601" endtime="20201211 02:47:07.619"></status>
+</suite>
+<suite id="s1-s4" name="Course" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Course">
+<suite id="s1-s4-s1" name="logClickCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Course\logClickCourse.robot">
+<test id="s1-s4-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.621" endtime="20201211 02:47:07.622" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.622" endtime="20201211 02:47:07.623" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.623" endtime="20201211 02:47:07.624" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.625" endtime="20201211 02:47:07.625" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.626" endtime="20201211 02:47:07.627" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s1-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.628" endtime="20201211 02:47:07.628" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.621" endtime="20201211 02:47:07.629"></status>
+</suite>
+<suite id="s1-s4-s2" name="Select" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Course\select">
+<suite id="s1-s4-s2-s1" name="logBuyCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Course\select\logBuyCourse.robot">
+<test id="s1-s4-s2-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.631" endtime="20201211 02:47:07.632" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.632" endtime="20201211 02:47:07.633" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.633" endtime="20201211 02:47:07.634" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.634" endtime="20201211 02:47:07.635" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.636" endtime="20201211 02:47:07.636" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.637" endtime="20201211 02:47:07.637" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s1-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.638" endtime="20201211 02:47:07.638" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.631" endtime="20201211 02:47:07.639"></status>
+</suite>
+<suite id="s1-s4-s2-s2" name="selectItem" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Course\select\selectItem.robot">
+<test id="s1-s4-s2-s2-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.641" endtime="20201211 02:47:07.641" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.642" endtime="20201211 02:47:07.643" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.643" endtime="20201211 02:47:07.644" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.644" endtime="20201211 02:47:07.645" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.646" endtime="20201211 02:47:07.647" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.648" endtime="20201211 02:47:07.648" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.649" endtime="20201211 02:47:07.649" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s4-s2-s2-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.650" endtime="20201211 02:47:07.650" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.640" endtime="20201211 02:47:07.651"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.630" endtime="20201211 02:47:07.653"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.620" endtime="20201211 02:47:07.662"></status>
+</suite>
+<suite id="s1-s5" name="logClickAllNewCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\logClickAllNewCourse.robot">
+<test id="s1-s5-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.665" endtime="20201211 02:47:07.665" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.666" endtime="20201211 02:47:07.667" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.668" endtime="20201211 02:47:07.668" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.669" endtime="20201211 02:47:07.669" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.671" endtime="20201211 02:47:07.671" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s5-t6" name="click new course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.672" endtime="20201211 02:47:07.672" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.664" endtime="20201211 02:47:07.673"></status>
+</suite>
+<suite id="s1-s6" name="logClickAllPopularCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\logClickAllPopularCourse.robot">
+<test id="s1-s6-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.675" endtime="20201211 02:47:07.676" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s6-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.677" endtime="20201211 02:47:07.677" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s6-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.678" endtime="20201211 02:47:07.679" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s6-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.680" endtime="20201211 02:47:07.681" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s6-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.682" endtime="20201211 02:47:07.682" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s6-t6" name="click new course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.683" endtime="20201211 02:47:07.683" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.674" endtime="20201211 02:47:07.684"></status>
+</suite>
+<suite id="s1-s7" name="logClickNewCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\logClickNewCourse.robot">
+<test id="s1-s7-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.686" endtime="20201211 02:47:07.686" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s7-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.695" endtime="20201211 02:47:07.695" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s7-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.696" endtime="20201211 02:47:07.697" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s7-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.697" endtime="20201211 02:47:07.698" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s7-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.699" endtime="20201211 02:47:07.699" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s7-t6" name="click new course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.700" endtime="20201211 02:47:07.700" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.685" endtime="20201211 02:47:07.701"></status>
+</suite>
+<suite id="s1-s8" name="logClickPopularCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\logClickPopularCourse.robot">
+<test id="s1-s8-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.702" endtime="20201211 02:47:07.703" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s8-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.703" endtime="20201211 02:47:07.704" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s8-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.704" endtime="20201211 02:47:07.705" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s8-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.705" endtime="20201211 02:47:07.706" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s8-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.707" endtime="20201211 02:47:07.707" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s8-t6" name="click popular couse">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.708" endtime="20201211 02:47:07.708" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.702" endtime="20201211 02:47:07.709"></status>
+</suite>
+<suite id="s1-s9" name="Login" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\login.robot">
+<test id="s1-s9-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.710" endtime="20201211 02:47:07.711" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s9-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.711" endtime="20201211 02:47:07.712" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s9-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.712" endtime="20201211 02:47:07.713" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s9-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.713" endtime="20201211 02:47:07.714" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s9-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.715" endtime="20201211 02:47:07.715" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.710" endtime="20201211 02:47:07.716"></status>
+</suite>
+<suite id="s1-s10" name="loginFail" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\loginFail.robot">
+<test id="s1-s10-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.719" endtime="20201211 02:47:07.720" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s10-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.729" endtime="20201211 02:47:07.729" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s10-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.730" endtime="20201211 02:47:07.730" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s10-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.731" endtime="20201211 02:47:07.731" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s10-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.732" endtime="20201211 02:47:07.733" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.718" endtime="20201211 02:47:07.734"></status>
+</suite>
+<suite id="s1-s11" name="loginWrongPassword" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\loginWrongPassword.robot">
+<test id="s1-s11-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.736" endtime="20201211 02:47:07.736" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s11-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.737" endtime="20201211 02:47:07.738" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s11-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.739" endtime="20201211 02:47:07.739" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s11-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.740" endtime="20201211 02:47:07.740" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s11-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.741" endtime="20201211 02:47:07.741" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.735" endtime="20201211 02:47:07.742"></status>
+</suite>
+<suite id="s1-s12" name="Shopping" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping">
+<suite id="s1-s12-s1" name="Confirm" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\confirm">
+<suite id="s1-s12-s1-s1" name="confirmOrder" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\confirm\confirmOrder.robot">
+<test id="s1-s12-s1-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.748" endtime="20201211 02:47:07.749" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.750" endtime="20201211 02:47:07.751" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.753" endtime="20201211 02:47:07.753" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.754" endtime="20201211 02:47:07.755" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.756" endtime="20201211 02:47:07.756" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.757" endtime="20201211 02:47:07.758" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.759" endtime="20201211 02:47:07.759" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.760" endtime="20201211 02:47:07.761" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s1-t9" name="click comfirm">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.762" endtime="20201211 02:47:07.763" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.747" endtime="20201211 02:47:07.772"></status>
+</suite>
+<suite id="s1-s12-s1-s2" name="logPayment" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\confirm\logPayment.robot">
+<test id="s1-s12-s1-s2-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.775" endtime="20201211 02:47:07.775" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.776" endtime="20201211 02:47:07.776" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.777" endtime="20201211 02:47:07.778" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.779" endtime="20201211 02:47:07.779" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.781" endtime="20201211 02:47:07.782" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.782" endtime="20201211 02:47:07.783" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.784" endtime="20201211 02:47:07.784" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.785" endtime="20201211 02:47:07.785" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t9" name="click comfirm">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.786" endtime="20201211 02:47:07.787" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t10" name="click next">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.788" endtime="20201211 02:47:07.788" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t11" name="click next">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.789" endtime="20201211 02:47:07.790" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t12" name="Transfer To">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.790" endtime="20201211 02:47:07.791" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t13" name="Transfer To">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.792" endtime="20201211 02:47:07.792" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t14" name="Input amount">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.793" endtime="20201211 02:47:07.793" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s1-s2-t15" name="Click Button">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.794" endtime="20201211 02:47:07.794" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.774" endtime="20201211 02:47:07.795"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.745" endtime="20201211 02:47:07.798"></status>
+</suite>
+<suite id="s1-s12-s2" name="logDetailPaymentCancle" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\logDetailPaymentCancle.robot">
+<test id="s1-s12-s2-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.807" endtime="20201211 02:47:07.807" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.808" endtime="20201211 02:47:07.808" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.809" endtime="20201211 02:47:07.809" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.810" endtime="20201211 02:47:07.810" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.811" endtime="20201211 02:47:07.812" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.812" endtime="20201211 02:47:07.813" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.814" endtime="20201211 02:47:07.814" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.815" endtime="20201211 02:47:07.815" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t9" name="click comfirm order page SelectItem">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.816" endtime="20201211 02:47:07.816" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t10" name="click next page invoice">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.817" endtime="20201211 02:47:07.817" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s2-t11" name="click cancle to detailpayment">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.818" endtime="20201211 02:47:07.818" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.806" endtime="20201211 02:47:07.820"></status>
+</suite>
+<suite id="s1-s12-s3" name="logDetailPaymentNext" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\logDetailPaymentNext.robot">
+<test id="s1-s12-s3-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.822" endtime="20201211 02:47:07.822" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.823" endtime="20201211 02:47:07.823" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.824" endtime="20201211 02:47:07.824" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.825" endtime="20201211 02:47:07.825" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.826" endtime="20201211 02:47:07.827" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.827" endtime="20201211 02:47:07.828" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.828" endtime="20201211 02:47:07.829" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.830" endtime="20201211 02:47:07.830" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t9" name="click comfirm order page SelectItem">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.831" endtime="20201211 02:47:07.831" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t10" name="click next page invoice">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.832" endtime="20201211 02:47:07.832" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s3-t11" name="click next page Detail Payment">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.833" endtime="20201211 02:47:07.833" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.821" endtime="20201211 02:47:07.834"></status>
+</suite>
+<suite id="s1-s12-s4" name="logInvoiceCancle" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\logInvoiceCancle.robot">
+<test id="s1-s12-s4-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.836" endtime="20201211 02:47:07.836" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.837" endtime="20201211 02:47:07.837" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.838" endtime="20201211 02:47:07.839" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.839" endtime="20201211 02:47:07.839" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.849" endtime="20201211 02:47:07.849" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.850" endtime="20201211 02:47:07.850" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.851" endtime="20201211 02:47:07.852" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.852" endtime="20201211 02:47:07.853" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t9" name="click comfirm order page SelectItem">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.853" endtime="20201211 02:47:07.854" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s4-t10" name="click next page invoice">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.854" endtime="20201211 02:47:07.855" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.835" endtime="20201211 02:47:07.856"></status>
+</suite>
+<suite id="s1-s12-s5" name="logInvoiceConfirmNext" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\logInvoiceConfirmNext.robot">
+<test id="s1-s12-s5-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.858" endtime="20201211 02:47:07.858" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.859" endtime="20201211 02:47:07.860" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.860" endtime="20201211 02:47:07.861" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.861" endtime="20201211 02:47:07.862" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.863" endtime="20201211 02:47:07.863" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t6" name="click course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.864" endtime="20201211 02:47:07.865" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t7" name="click buy">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.865" endtime="20201211 02:47:07.866" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t8" name="click shoping">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.866" endtime="20201211 02:47:07.867" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t9" name="click comfirm order page SelectItem">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.868" endtime="20201211 02:47:07.869" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s12-s5-t10" name="click next page invoice">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.869" endtime="20201211 02:47:07.870" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.857" endtime="20201211 02:47:07.871"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.744" endtime="20201211 02:47:07.873"></status>
+</suite>
+<suite id="s1-s13" name="Subject" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Subject">
+<suite id="s1-s13-s1" name="logClickSubject" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Subject\logClickSubject.robot">
+<test id="s1-s13-s1-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.884" endtime="20201211 02:47:07.885" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s1-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.889" endtime="20201211 02:47:07.889" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s1-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.891" endtime="20201211 02:47:07.891" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s1-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.892" endtime="20201211 02:47:07.892" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s1-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.894" endtime="20201211 02:47:07.895" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s1-t6" name="click subject">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.896" endtime="20201211 02:47:07.897" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.884" endtime="20201211 02:47:07.899"></status>
+</suite>
+<suite id="s1-s13-s2" name="logClickSubjectCourse" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Subject\logClickSubjectCourse.robot">
+<test id="s1-s13-s2-t1" name="open">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.903" endtime="20201211 02:47:07.903" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t2" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.904" endtime="20201211 02:47:07.905" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t3" name="input email">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.908" endtime="20201211 02:47:07.919" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t4" name="input password">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.921" endtime="20201211 02:47:07.922" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t5" name="click signin">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.924" endtime="20201211 02:47:07.925" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t6" name="click subject">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.926" endtime="20201211 02:47:07.927" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s13-s2-t7" name="click subject course">
+<tags>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" starttime="20201211 02:47:07.928" endtime="20201211 02:47:07.930" critical="yes">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20201211 02:47:07.902" endtime="20201211 02:47:07.932"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:47:07.883" endtime="20201211 02:47:07.935"></status>
+</suite>
+<status status="FAIL" starttime="20201211 02:46:59.527" endtime="20201211 02:47:07.945"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0">Critical Tests</stat>
-<stat pass="2" fail="0">All Tests</stat>
+<stat pass="1" fail="226">Critical Tests</stat>
+<stat pass="1" fail="226">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="1" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="225">robot:exit</stat>
 </tag>
 <suite>
-<stat pass="2" fail="0" id="s1" name="homeClickCourse">homeClickCourse</stat>
+<stat pass="1" fail="226" id="s1" name="homeStd">homeStd</stat>
+<stat pass="1" fail="5" id="s1-s1" name="Aboutus">homeStd.Aboutus</stat>
+<stat pass="0" fail="76" id="s1-s2" name="Account">homeStd.Account</stat>
+<stat pass="0" fail="35" id="s1-s2-s1" name="Account">homeStd.Account.Account</stat>
+<stat pass="0" fail="13" id="s1-s2-s1-s1" name="ChangPassword">homeStd.Account.Account.ChangPassword</stat>
+<stat pass="0" fail="13" id="s1-s2-s1-s1-s1" name="changePassword">homeStd.Account.Account.ChangPassword.changePassword</stat>
+<stat pass="0" fail="15" id="s1-s2-s1-s2" name="EditProfile">homeStd.Account.Account.EditProfile</stat>
+<stat pass="0" fail="15" id="s1-s2-s1-s2-s1" name="editProfile">homeStd.Account.Account.EditProfile.editProfile</stat>
+<stat pass="0" fail="7" id="s1-s2-s1-s3" name="Profile">homeStd.Account.Account.Profile</stat>
+<stat pass="0" fail="7" id="s1-s2-s2" name="LogOut">homeStd.Account.LogOut</stat>
+<stat pass="0" fail="7" id="s1-s2-s2-s1" name="Logout">homeStd.Account.LogOut.Logout</stat>
+<stat pass="0" fail="34" id="s1-s2-s3" name="MyCourse">homeStd.Account.MyCourse</stat>
+<stat pass="0" fail="10" id="s1-s2-s3-s1" name="chooseTutor">homeStd.Account.MyCourse.chooseTutor</stat>
+<stat pass="0" fail="8" id="s1-s2-s3-s2" name="clickMyCourse">homeStd.Account.MyCourse.clickMyCourse</stat>
+<stat pass="0" fail="9" id="s1-s2-s3-s3" name="clickMyLesson">homeStd.Account.MyCourse.clickMyLesson</stat>
+<stat pass="0" fail="7" id="s1-s2-s3-s4" name="myCourse">homeStd.Account.MyCourse.myCourse</stat>
+<stat pass="0" fail="6" id="s1-s3" name="Basicuse">homeStd.Basicuse</stat>
+<stat pass="0" fail="21" id="s1-s4" name="Course">homeStd.Course</stat>
+<stat pass="0" fail="6" id="s1-s4-s1" name="logClickCourse">homeStd.Course.logClickCourse</stat>
+<stat pass="0" fail="15" id="s1-s4-s2" name="Select">homeStd.Course.Select</stat>
+<stat pass="0" fail="7" id="s1-s4-s2-s1" name="logBuyCourse">homeStd.Course.Select.logBuyCourse</stat>
+<stat pass="0" fail="8" id="s1-s4-s2-s2" name="selectItem">homeStd.Course.Select.selectItem</stat>
+<stat pass="0" fail="6" id="s1-s5" name="logClickAllNewCourse">homeStd.logClickAllNewCourse</stat>
+<stat pass="0" fail="6" id="s1-s6" name="logClickAllPopularCourse">homeStd.logClickAllPopularCourse</stat>
+<stat pass="0" fail="6" id="s1-s7" name="logClickNewCourse">homeStd.logClickNewCourse</stat>
+<stat pass="0" fail="6" id="s1-s8" name="logClickPopularCourse">homeStd.logClickPopularCourse</stat>
+<stat pass="0" fail="5" id="s1-s9" name="Login">homeStd.Login</stat>
+<stat pass="0" fail="5" id="s1-s10" name="loginFail">homeStd.loginFail</stat>
+<stat pass="0" fail="5" id="s1-s11" name="loginWrongPassword">homeStd.loginWrongPassword</stat>
+<stat pass="0" fail="66" id="s1-s12" name="Shopping">homeStd.Shopping</stat>
+<stat pass="0" fail="24" id="s1-s12-s1" name="Confirm">homeStd.Shopping.Confirm</stat>
+<stat pass="0" fail="9" id="s1-s12-s1-s1" name="confirmOrder">homeStd.Shopping.Confirm.confirmOrder</stat>
+<stat pass="0" fail="15" id="s1-s12-s1-s2" name="logPayment">homeStd.Shopping.Confirm.logPayment</stat>
+<stat pass="0" fail="11" id="s1-s12-s2" name="logDetailPaymentCancle">homeStd.Shopping.logDetailPaymentCancle</stat>
+<stat pass="0" fail="11" id="s1-s12-s3" name="logDetailPaymentNext">homeStd.Shopping.logDetailPaymentNext</stat>
+<stat pass="0" fail="10" id="s1-s12-s4" name="logInvoiceCancle">homeStd.Shopping.logInvoiceCancle</stat>
+<stat pass="0" fail="10" id="s1-s12-s5" name="logInvoiceConfirmNext">homeStd.Shopping.logInvoiceConfirmNext</stat>
+<stat pass="0" fail="13" id="s1-s13" name="Subject">homeStd.Subject</stat>
+<stat pass="0" fail="6" id="s1-s13-s1" name="logClickSubject">homeStd.Subject.logClickSubject</stat>
+<stat pass="0" fail="7" id="s1-s13-s2" name="logClickSubjectCourse">homeStd.Subject.logClickSubjectCourse</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20201211 02:47:07.414" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20201211 02:47:07.420" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Aboutus'.</msg>
+<msg timestamp="20201211 02:47:07.448" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.Account.ChangPassword.changePassword'.</msg>
+<msg timestamp="20201211 02:47:07.452" level="WARN">Multiple test cases with name 'show profile' executed in test suite 'homeStd.Account.Account.ChangPassword.changePassword'.</msg>
+<msg timestamp="20201211 02:47:07.456" level="WARN">Multiple test cases with name 'show profile' executed in test suite 'homeStd.Account.Account.ChangPassword.changePassword'.</msg>
+<msg timestamp="20201211 02:47:07.483" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.Account.EditProfile.editProfile'.</msg>
+<msg timestamp="20201211 02:47:07.488" level="WARN">Multiple test cases with name 'show profile' executed in test suite 'homeStd.Account.Account.EditProfile.editProfile'.</msg>
+<msg timestamp="20201211 02:47:07.490" level="WARN">Multiple test cases with name 'show profile' executed in test suite 'homeStd.Account.Account.EditProfile.editProfile'.</msg>
+<msg timestamp="20201211 02:47:07.515" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.Account.Profile'.</msg>
+<msg timestamp="20201211 02:47:07.528" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.LogOut.Logout'.</msg>
+<msg timestamp="20201211 02:47:07.540" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.MyCourse.chooseTutor'.</msg>
+<msg timestamp="20201211 02:47:07.546" level="WARN">Multiple test cases with name 'Click Lesson' executed in test suite 'homeStd.Account.MyCourse.chooseTutor'.</msg>
+<msg timestamp="20201211 02:47:07.554" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.MyCourse.clickMyCourse'.</msg>
+<msg timestamp="20201211 02:47:07.566" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.MyCourse.clickMyLesson'.</msg>
+<msg timestamp="20201211 02:47:07.587" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Account.MyCourse.myCourse'.</msg>
+<msg timestamp="20201211 02:47:07.608" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Basicuse'.</msg>
+<msg timestamp="20201211 02:47:07.626" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Course.logClickCourse'.</msg>
+<msg timestamp="20201211 02:47:07.635" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Course.Select.logBuyCourse'.</msg>
+<msg timestamp="20201211 02:47:07.646" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Course.Select.selectItem'.</msg>
+<msg timestamp="20201211 02:47:07.671" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.logClickAllNewCourse'.</msg>
+<msg timestamp="20201211 02:47:07.682" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.logClickAllPopularCourse'.</msg>
+<msg timestamp="20201211 02:47:07.698" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.logClickNewCourse'.</msg>
+<msg timestamp="20201211 02:47:07.706" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.logClickPopularCourse'.</msg>
+<msg timestamp="20201211 02:47:07.714" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Login'.</msg>
+<msg timestamp="20201211 02:47:07.732" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.loginFail'.</msg>
+<msg timestamp="20201211 02:47:07.741" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.loginWrongPassword'.</msg>
+<msg timestamp="20201211 02:47:07.756" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.Confirm.confirmOrder'.</msg>
+<msg timestamp="20201211 02:47:07.780" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.Confirm.logPayment'.</msg>
+<msg timestamp="20201211 02:47:07.789" level="WARN">Multiple test cases with name 'click next' executed in test suite 'homeStd.Shopping.Confirm.logPayment'.</msg>
+<msg timestamp="20201211 02:47:07.791" level="WARN">Multiple test cases with name 'Transfer To' executed in test suite 'homeStd.Shopping.Confirm.logPayment'.</msg>
+<msg timestamp="20201211 02:47:07.811" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.logDetailPaymentCancle'.</msg>
+<msg timestamp="20201211 02:47:07.826" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.logDetailPaymentNext'.</msg>
+<msg timestamp="20201211 02:47:07.849" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.logInvoiceCancle'.</msg>
+<msg timestamp="20201211 02:47:07.863" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Shopping.logInvoiceConfirmNext'.</msg>
+<msg timestamp="20201211 02:47:07.894" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Subject.logClickSubject'.</msg>
+<msg timestamp="20201211 02:47:07.923" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'homeStd.Subject.logClickSubjectCourse'.</msg>
 </errors>
 </robot>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201205 03:07:29.866" rpa="false">
-<suite id="s1" name="Homeclick" source="C:\Users\new\Desktop\teststyl\studentLogin\homeclick.robot">
-<test id="s1-t1" name="Open WebDriver">
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<arguments>
-<arg>http://localhost:8080/home</arg>
-<arg>chrome</arg>
-</arguments>
-<msg timestamp="20201205 03:07:30.080" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/home'.</msg>
-<status status="PASS" starttime="20201205 03:07:30.080" endtime="20201205 03:07:34.586"></status>
-</kw>
-<status status="PASS" starttime="20201205 03:07:30.079" endtime="20201205 03:07:34.587" critical="yes"></status>
-</test>
-<test id="s1-t2" name="กด">
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>//*[@class="courseCard v-card v-card--link v-sheet theme--light elevation-16"]</arg>
-</arguments>
-<msg timestamp="20201205 03:07:34.593" level="INFO">Clicking element '//*[@class="courseCard v-card v-card--link v-sheet theme--light elevation-16"]'.</msg>
-<status status="PASS" starttime="20201205 03:07:34.593" endtime="20201205 03:07:34.710"></status>
-</kw>
-<status status="PASS" starttime="20201205 03:07:34.592" endtime="20201205 03:07:34.711" critical="yes"></status>
-</test>
-<status status="PASS" starttime="20201205 03:07:29.868" endtime="20201205 03:07:34.718"></status>
-</suite>
-<statistics>
-<total>
-<stat pass="2" fail="0">Critical Tests</stat>
-<stat pass="2" fail="0">All Tests</stat>
-</total>
-<tag>
-</tag>
-<suite>
-<stat pass="2" fail="0" id="s1" name="Homeclick">Homeclick</stat>
-</suite>
-</statistics>
-<errors>
-</errors>
-</robot>
->>>>>>> 8785c3a19e1d00f1ef80a609e5abcb1314d335bd
