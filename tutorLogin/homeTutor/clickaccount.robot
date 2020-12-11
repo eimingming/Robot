@@ -15,7 +15,7 @@ Log in
     Input text   password    123456
     Click Element   //*[@class="signInBtn"]
     sleep  4s
-click human
+click account
     sleep  4s
     Click Element   xpath=//*[@id="account"]
 click account / show profile

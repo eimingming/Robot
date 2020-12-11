@@ -22,9 +22,6 @@ click signin
 click Account
     sleep  4s
     Click Element   xpath=//*[@id="account"]
-click My course
-    sleep  4s
+show My course
+    sleep  2s
     Click Element    xpath=//*[@id="list-item-272"]
-Click Course
-    sleep  4s
-    Click Element    xpath=//*[@class="cardCourseSmall v-card v-card--link v-sheet theme--light elevation-12"]

@@ -11,7 +11,7 @@ Log in
     Open Browser  ${my_url}  ${browser}
     Sleep   4s
     Click Button   //*[@id="signin"]
-    Input text   email    aaatutor@gmail.com
+    Input text   email    tu@mail.com
     Input text   password    123456
     Click Element   //*[@class="signInBtn"]
     sleep  4s
