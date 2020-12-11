@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201211 00:39:26.301" rpa="false">
-<suite id="s1" name="logPayment" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\confirm\logPayment.robot">
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20201211 16:04:26.678" rpa="false">
+<suite id="s1" name="confirmPayment" source="D:\KMUTT\year3\term1\Robot\studentLogin\homeStd\Shopping\confirm\confirmPayment.robot">
 <test id="s1-t1" name="open">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -8,10 +8,10 @@
 <arg>${my_url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20201211 00:39:26.455" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/'.</msg>
-<status status="PASS" starttime="20201211 00:39:26.455" endtime="20201211 00:39:30.174"></status>
+<msg timestamp="20201211 16:04:26.823" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8080/'.</msg>
+<status status="PASS" starttime="20201211 16:04:26.823" endtime="20201211 16:04:31.750"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:26.454" endtime="20201211 00:39:30.174" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:26.823" endtime="20201211 16:04:31.751" critical="yes"></status>
 </test>
 <test id="s1-t2" name="click signin">
 <kw name="Sleep" library="BuiltIn">
@@ -19,18 +19,18 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:32.178" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:30.176" endtime="20201211 00:39:32.181"></status>
+<msg timestamp="20201211 16:04:33.755" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:31.754" endtime="20201211 16:04:33.755"></status>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <doc>Clicks the button identified by ``locator``.</doc>
 <arguments>
 <arg>id=signin</arg>
 </arguments>
-<msg timestamp="20201211 00:39:32.182" level="INFO">Clicking button 'id=signin'.</msg>
-<status status="PASS" starttime="20201211 00:39:32.182" endtime="20201211 00:39:32.324"></status>
+<msg timestamp="20201211 16:04:33.756" level="INFO">Clicking button 'id=signin'.</msg>
+<status status="PASS" starttime="20201211 16:04:33.756" endtime="20201211 16:04:33.867"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:30.176" endtime="20201211 00:39:32.325" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:31.753" endtime="20201211 16:04:33.867" critical="yes"></status>
 </test>
 <test id="s1-t3" name="input email">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -39,10 +39,10 @@
 <arg>id=email</arg>
 <arg>testSTD@gmail.com</arg>
 </arguments>
-<msg timestamp="20201211 00:39:32.335" level="INFO">Typing text 'testSTD@gmail.com' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20201211 00:39:32.335" endtime="20201211 00:39:32.560"></status>
+<msg timestamp="20201211 16:04:33.870" level="INFO">Typing text 'testSTD@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20201211 16:04:33.870" endtime="20201211 16:04:34.200"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:32.333" endtime="20201211 00:39:32.562" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:33.870" endtime="20201211 16:04:34.201" critical="yes"></status>
 </test>
 <test id="s1-t4" name="input password">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -51,10 +51,10 @@
 <arg>id=password</arg>
 <arg>741852</arg>
 </arguments>
-<msg timestamp="20201211 00:39:32.565" level="INFO">Typing text '741852' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20201211 00:39:32.565" endtime="20201211 00:39:32.733"></status>
+<msg timestamp="20201211 16:04:34.205" level="INFO">Typing text '741852' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20201211 16:04:34.205" endtime="20201211 16:04:34.365"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:32.563" endtime="20201211 00:39:32.733" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:34.204" endtime="20201211 16:04:34.367" critical="yes"></status>
 </test>
 <test id="s1-t5" name="click signin">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -62,18 +62,18 @@
 <arguments>
 <arg>//*[@class="signInBtn"]</arg>
 </arguments>
-<msg timestamp="20201211 00:39:32.736" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
-<status status="PASS" starttime="20201211 00:39:32.736" endtime="20201211 00:39:32.790"></status>
+<msg timestamp="20201211 16:04:34.371" level="INFO">Clicking element '//*[@class="signInBtn"]'.</msg>
+<status status="PASS" starttime="20201211 16:04:34.371" endtime="20201211 16:04:34.452"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:36.790" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:32.790" endtime="20201211 00:39:36.790"></status>
+<msg timestamp="20201211 16:04:38.453" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:34.452" endtime="20201211 16:04:38.453"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:32.735" endtime="20201211 00:39:36.791" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:34.370" endtime="20201211 16:04:38.454" critical="yes"></status>
 </test>
 <test id="s1-t6" name="click course">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -81,18 +81,18 @@
 <arguments>
 <arg>//*[@id="Cal1"]</arg>
 </arguments>
-<msg timestamp="20201211 00:39:36.801" level="INFO">Clicking element '//*[@id="Cal1"]'.</msg>
-<status status="PASS" starttime="20201211 00:39:36.801" endtime="20201211 00:39:36.969"></status>
+<msg timestamp="20201211 16:04:38.457" level="INFO">Clicking element '//*[@id="Cal1"]'.</msg>
+<status status="PASS" starttime="20201211 16:04:38.457" endtime="20201211 16:04:38.866"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:40.971" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:36.970" endtime="20201211 00:39:40.971"></status>
+<msg timestamp="20201211 16:04:42.867" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:38.866" endtime="20201211 16:04:42.867"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:36.800" endtime="20201211 00:39:40.972" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:38.456" endtime="20201211 16:04:42.868" critical="yes"></status>
 </test>
 <test id="s1-t7" name="click buy">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -100,18 +100,18 @@
 <arguments>
 <arg>//*[@class="buttonContainer col"]</arg>
 </arguments>
-<msg timestamp="20201211 00:39:40.976" level="INFO">Clicking element '//*[@class="buttonContainer col"]'.</msg>
-<status status="PASS" starttime="20201211 00:39:40.976" endtime="20201211 00:39:41.056"></status>
+<msg timestamp="20201211 16:04:42.873" level="INFO">Clicking element '//*[@class="buttonContainer col"]'.</msg>
+<status status="PASS" starttime="20201211 16:04:42.873" endtime="20201211 16:04:42.959"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:43.057" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:41.057" endtime="20201211 00:39:43.057"></status>
+<msg timestamp="20201211 16:04:44.961" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:42.959" endtime="20201211 16:04:44.961"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:40.975" endtime="20201211 00:39:43.057" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:42.872" endtime="20201211 16:04:44.962" critical="yes"></status>
 </test>
 <test id="s1-t8" name="click shoping">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -119,18 +119,18 @@
 <arguments>
 <arg>//*[@ID="basket"]</arg>
 </arguments>
-<msg timestamp="20201211 00:39:43.059" level="INFO">Clicking element '//*[@ID="basket"]'.</msg>
-<status status="PASS" starttime="20201211 00:39:43.059" endtime="20201211 00:39:43.140"></status>
+<msg timestamp="20201211 16:04:44.978" level="INFO">Clicking element '//*[@ID="basket"]'.</msg>
+<status status="PASS" starttime="20201211 16:04:44.978" endtime="20201211 16:04:45.061"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:47.143" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:43.141" endtime="20201211 00:39:47.143"></status>
+<msg timestamp="20201211 16:04:49.061" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:45.061" endtime="20201211 16:04:49.061"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:43.059" endtime="20201211 00:39:47.143" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:44.976" endtime="20201211 16:04:49.062" critical="yes"></status>
 </test>
 <test id="s1-t9" name="click comfirm">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -138,18 +138,18 @@
 <arguments>
 <arg>class=bottonCom</arg>
 </arguments>
-<msg timestamp="20201211 00:39:47.145" level="INFO">Clicking button 'class=bottonCom'.</msg>
-<status status="PASS" starttime="20201211 00:39:47.145" endtime="20201211 00:39:47.220"></status>
+<msg timestamp="20201211 16:04:49.064" level="INFO">Clicking button 'class=bottonCom'.</msg>
+<status status="PASS" starttime="20201211 16:04:49.064" endtime="20201211 16:04:49.159"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>6s</arg>
 </arguments>
-<msg timestamp="20201211 00:39:53.223" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:47.222" endtime="20201211 00:39:53.223"></status>
+<msg timestamp="20201211 16:04:55.162" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:49.161" endtime="20201211 16:04:55.162"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:47.144" endtime="20201211 00:39:53.224" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:49.064" endtime="20201211 16:04:55.162" critical="yes"></status>
 </test>
 <test id="s1-t10" name="click next">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -157,18 +157,18 @@
 <arguments>
 <arg>id=btnNext</arg>
 </arguments>
-<msg timestamp="20201211 00:39:53.228" level="INFO">Clicking button 'id=btnNext'.</msg>
-<status status="PASS" starttime="20201211 00:39:53.228" endtime="20201211 00:39:53.319"></status>
+<msg timestamp="20201211 16:04:55.167" level="INFO">Clicking button 'id=btnNext'.</msg>
+<status status="PASS" starttime="20201211 16:04:55.167" endtime="20201211 16:04:55.263"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>10s</arg>
 </arguments>
-<msg timestamp="20201211 00:40:03.320" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20201211 00:39:53.319" endtime="20201211 00:40:03.320"></status>
+<msg timestamp="20201211 16:05:05.266" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20201211 16:04:55.264" endtime="20201211 16:05:05.266"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:39:53.227" endtime="20201211 00:40:03.321" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:04:55.166" endtime="20201211 16:05:05.266" critical="yes"></status>
 </test>
 <test id="s1-t11" name="click next">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -176,18 +176,18 @@
 <arguments>
 <arg>id=btnNext</arg>
 </arguments>
-<msg timestamp="20201211 00:40:03.327" level="INFO">Clicking button 'id=btnNext'.</msg>
-<status status="PASS" starttime="20201211 00:40:03.326" endtime="20201211 00:40:03.472"></status>
+<msg timestamp="20201211 16:05:05.270" level="INFO">Clicking button 'id=btnNext'.</msg>
+<status status="PASS" starttime="20201211 16:05:05.269" endtime="20201211 16:05:05.393"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201211 00:40:07.475" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:03.473" endtime="20201211 00:40:07.475"></status>
+<msg timestamp="20201211 16:05:09.395" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201211 16:05:05.394" endtime="20201211 16:05:09.395"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:40:03.325" endtime="20201211 00:40:07.476" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:05:05.269" endtime="20201211 16:05:09.395" critical="yes"></status>
 </test>
 <test id="s1-t12" name="Transfer To">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -195,34 +195,32 @@
 <arguments>
 <arg>//*[@id="bank"]</arg>
 </arguments>
-<msg timestamp="20201211 00:40:07.478" level="INFO">Clicking element '//*[@id="bank"]'.</msg>
-<status status="PASS" starttime="20201211 00:40:07.478" endtime="20201211 00:40:07.542"></status>
+<msg timestamp="20201211 16:05:09.399" level="INFO">Clicking element '//*[@id="bank"]'.</msg>
+<status status="PASS" starttime="20201211 16:05:09.399" endtime="20201211 16:05:09.471"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>6s</arg>
 </arguments>
-<msg timestamp="20201211 00:40:13.544" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:07.543" endtime="20201211 00:40:13.544"></status>
+<msg timestamp="20201211 16:05:15.473" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20201211 16:05:09.472" endtime="20201211 16:05:15.473"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="list-item-366-0"]</arg>
 </arguments>
-<msg timestamp="20201211 00:40:13.545" level="INFO">Clicking element 'xpath=//*[@id="list-item-366-0"]'.</msg>
-<status status="PASS" starttime="20201211 00:40:13.545" endtime="20201211 00:40:13.639"></status>
+<msg timestamp="20201211 16:05:15.474" level="INFO">Clicking element 'xpath=//*[@id="list-item-366-0"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201211 16:05:15.867" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201211 16:05:15.493" endtime="20201211 16:05:15.868"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>4s</arg>
-</arguments>
-<msg timestamp="20201211 00:40:17.641" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:13.640" endtime="20201211 00:40:17.641"></status>
+<msg timestamp="20201211 16:05:15.869" level="FAIL">Element with locator 'xpath=//*[@id="list-item-366-0"]' not found.</msg>
+<status status="FAIL" starttime="20201211 16:05:15.474" endtime="20201211 16:05:15.869"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:40:07.477" endtime="20201211 00:40:17.641" critical="yes"></status>
+<status status="FAIL" starttime="20201211 16:05:09.398" endtime="20201211 16:05:15.870" critical="yes">Element with locator 'xpath=//*[@id="list-item-366-0"]' not found.</status>
 </test>
 <test id="s1-t13" name="Transfer To">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -230,34 +228,20 @@
 <arguments>
 <arg>//*[@id="yourbank"]</arg>
 </arguments>
-<msg timestamp="20201211 00:40:17.647" level="INFO">Clicking element '//*[@id="yourbank"]'.</msg>
-<status status="PASS" starttime="20201211 00:40:17.646" endtime="20201211 00:40:17.724"></status>
+<msg timestamp="20201211 16:05:15.873" level="INFO">Clicking element '//*[@id="yourbank"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201211 16:05:17.303" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20201211 16:05:16.965" endtime="20201211 16:05:17.303"></status>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>6s</arg>
-</arguments>
-<msg timestamp="20201211 00:40:23.726" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:17.724" endtime="20201211 00:40:23.726"></status>
+<msg timestamp="20201211 16:05:17.312" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div data-v-536ea958="" id="yourbank" class="col"&gt;...&lt;/div&gt; is not clickable at point (1063, 532). Other element would receive the click: &lt;div class="v-list-item__content"&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.88)
+</msg>
+<status status="FAIL" starttime="20201211 16:05:15.873" endtime="20201211 16:05:17.312"></status>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click the element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//*[@id="list-item-376-0"]</arg>
-</arguments>
-<msg timestamp="20201211 00:40:23.727" level="INFO">Clicking element 'xpath=//*[@id="list-item-376-0"]'.</msg>
-<status status="PASS" starttime="20201211 00:40:23.727" endtime="20201211 00:40:23.824"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>4s</arg>
-</arguments>
-<msg timestamp="20201211 00:40:27.827" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:23.825" endtime="20201211 00:40:27.827"></status>
-</kw>
-<status status="PASS" starttime="20201211 00:40:17.645" endtime="20201211 00:40:27.827" critical="yes"></status>
+<status status="FAIL" starttime="20201211 16:05:15.872" endtime="20201211 16:05:17.313" critical="yes">ElementClickInterceptedException: Message: element click intercepted: Element &lt;div data-v-536ea958="" id="yourbank" class="col"&gt;...&lt;/div&gt; is not clickable at point (1063, 532). Other element would receive the click: &lt;div class="v-list-item__content"&gt;...&lt;/div&gt;
+  (Session info: chrome=87.0.4280.88)
+</status>
 </test>
 <test id="s1-t14" name="Input amount">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -266,18 +250,18 @@
 <arg>id=AmountTransfer</arg>
 <arg>50</arg>
 </arguments>
-<msg timestamp="20201211 00:40:27.829" level="INFO">Typing text '50' into text field 'id=AmountTransfer'.</msg>
-<status status="PASS" starttime="20201211 00:40:27.829" endtime="20201211 00:40:27.963"></status>
+<msg timestamp="20201211 16:05:17.315" level="INFO">Typing text '50' into text field 'id=AmountTransfer'.</msg>
+<status status="PASS" starttime="20201211 16:05:17.315" endtime="20201211 16:05:17.467"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>4s</arg>
 </arguments>
-<msg timestamp="20201211 00:40:31.965" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20201211 00:40:27.964" endtime="20201211 00:40:31.965"></status>
+<msg timestamp="20201211 16:05:21.469" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201211 16:05:17.469" endtime="20201211 16:05:21.469"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:40:27.829" endtime="20201211 00:40:31.965" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:05:17.315" endtime="20201211 16:05:21.470" critical="yes"></status>
 </test>
 <test id="s1-t15" name="Click Button">
 <kw name="Click Button" library="SeleniumLibrary">
@@ -285,27 +269,27 @@
 <arguments>
 <arg>class=text-none</arg>
 </arguments>
-<msg timestamp="20201211 00:40:31.967" level="INFO">Clicking button 'class=text-none'.</msg>
-<status status="PASS" starttime="20201211 00:40:31.967" endtime="20201211 00:40:32.043"></status>
+<msg timestamp="20201211 16:05:21.473" level="INFO">Clicking button 'class=text-none'.</msg>
+<status status="PASS" starttime="20201211 16:05:21.473" endtime="20201211 16:05:21.585"></status>
 </kw>
-<status status="PASS" starttime="20201211 00:40:31.966" endtime="20201211 00:40:32.044" critical="yes"></status>
+<status status="PASS" starttime="20201211 16:05:21.472" endtime="20201211 16:05:21.585" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20201211 00:39:26.302" endtime="20201211 00:40:32.048"></status>
+<status status="FAIL" starttime="20201211 16:04:26.679" endtime="20201211 16:05:21.590"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="15" fail="0">Critical Tests</stat>
-<stat pass="15" fail="0">All Tests</stat>
+<stat pass="13" fail="2">Critical Tests</stat>
+<stat pass="13" fail="2">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="15" fail="0" id="s1" name="logPayment">logPayment</stat>
+<stat pass="13" fail="2" id="s1" name="confirmPayment">confirmPayment</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20201211 00:39:32.735" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'logPayment'.</msg>
-<msg timestamp="20201211 00:40:03.324" level="WARN">Multiple test cases with name 'click next' executed in test suite 'logPayment'.</msg>
-<msg timestamp="20201211 00:40:17.644" level="WARN">Multiple test cases with name 'Transfer To' executed in test suite 'logPayment'.</msg>
+<msg timestamp="20201211 16:04:34.369" level="WARN">Multiple test cases with name 'click signin' executed in test suite 'confirmPayment'.</msg>
+<msg timestamp="20201211 16:05:05.268" level="WARN">Multiple test cases with name 'click next' executed in test suite 'confirmPayment'.</msg>
+<msg timestamp="20201211 16:05:15.872" level="WARN">Multiple test cases with name 'Transfer To' executed in test suite 'confirmPayment'.</msg>
 </errors>
 </robot>
